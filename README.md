@@ -10,7 +10,7 @@
 
 为保持主流浏览器体积最小, 拆分 IE6-8 为独立版本(`base.ie.css`)
 
-```
+```html
 <!-- for IE6-8 -->
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="base.ie.css">
@@ -41,11 +41,11 @@
 
 - base.ltr.ie.css
 
-## 精简点
+## COMPACT DETAIL
 
- 1. 不常用的 form 控件 reset
+### 1. 不常用的 form 控件 reset
 
-```
+```css
 input[type="search"] {
     -webkit-appearance: textfield;
     -webkit-box-sizing: content-box;
@@ -58,9 +58,9 @@ input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-se
 }
 ```
 
-2. html5 标签兼容
+### 2. html5 标签兼容
 
-```
+```css
 audio,canvas,video {
     display: inline-block;
     *display: inline;
@@ -73,9 +73,9 @@ audio:not([controls]) {
 }
 ```
 
- 3. 过旧的样式属性兼容
+### 3. 过旧的样式属性兼容
 
-```
+```css
 .unselect,i,.i,.icon {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -85,21 +85,21 @@ audio:not([controls]) {
 }
 ```
 
-    4. IE Hack
+### 4. IE Hack
 
-```
+```css
 _zoom:expression(function(el) {
     document.execCommand('BackgroundImageCache',false,true);el.style.zoom = "1";
 }(this));
 ```
 
-    5. kill jQuery-UI
+### 5. kill jQuery-UI
 
 待定, 依赖自定义网址重构
 
-    6. 不常用的工具类
+### 6. 不常用的工具类
 
-```
+```css
 sup,.sup {
     top: -0.5em;
 }
@@ -109,13 +109,60 @@ sub,.sub {
 }
 ```
 
-    7. 冗余代码
+### 7. 冗余代码
 
-```
+```css
 @charset "utf-8";
 ...
 @charset "utf-8";
 ```
+
+### 8. 抽象继承冗余部分
+
+```css
+.icon-hot{
+    display: inline-block;
+	width: 30px;
+	height: 11px;
+	margin-left: 3px;
+	cursor: pointer;
+	background: url(../img/i-rtl-hot.png?m=z) no-repeat;
+	_position: absolute;
+	font-size:0;
+}
+.icon-new{
+	display: inline-block;
+	width: 30px;
+	height: 11px;
+	margin-left: 3px;
+	cursor: pointer;
+	background: url(../img/i-rtl-new.png?m=z) no-repeat;
+	_position: absolute;
+	font-size:0;
+}
+```
+
+暂定 icon 类重写为:
+
+```css
+.i{} /*base*/
+.i-l{} /*large*/
+.i-m{} /*media*/
+.i-s{} /*small*/
+
+.i-new{} /*custom*/
+```
+
+另外: base.css 中提供了很多常用工具类, 比如:
+
+```css
+.hide{} /*隐藏*/
+.s-ptn{} /*通用margin/padding设置*/
+.unselect{} /*禁止文本选择*/
+.fl{} /*浮动*/
+.g /*grid 布局相关*/
+```
+请在源码或文档中熟悉, 避免业务代码冗余
 
 ## TEST
 
