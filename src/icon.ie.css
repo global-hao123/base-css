@@ -1,0 +1,6 @@
+.icon{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    _position: absolute;
+} 

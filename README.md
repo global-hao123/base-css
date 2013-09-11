@@ -4,6 +4,8 @@
 
 `git checkout mini`
 
+经过压缩精简, 同样功能 base-css 从 **9K** 减少到 **5K**
+
 ## USAGE
 
 为保持主流浏览器体积最小, 拆分 IE6-8 为独立版本(`base.ie.css`)
@@ -11,30 +13,37 @@
 ```
 <!-- for IE6-8 -->
 <!--[if lt IE 9]>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="base.ie.css">
 <![endif]-->
 <!--[if gte IE 9]><!-->
-    <link rel="stylesheet" href="base.ie.css">
+    <link rel="stylesheet" href="base.css">
 <!--<![endif]-->
 ```
 
 ## BUILD & OUTPUT
 
-`npm i && grunt`
+* 安装依赖
+`npm i`
+
+* 编译打包
+`grunt`
+
+* 测试(默认访问: 127.0.0.1:8011)
+`grunt test`
 
 最终产出在 dist 目录, 分为 4 份文件
 
-base.rtl.css
+- base.rtl.css
 
-base.ltr.css
+- base.ltr.css
 
-base.ie.rtl.css
+- base.rtl.ie.css
 
-base.ie.ltr.css
+- base.ltr.ie.css
 
 ## 精简点
 
-    1. 不常用的 form 控件 reset
+ 1. 不常用的 form 控件 reset
 
 ```
 input[type="search"] {
@@ -49,7 +58,7 @@ input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-se
 }
 ```
 
-    2. html5 标签兼容
+2. html5 标签兼容
 
 ```
 audio,canvas,video {
@@ -64,7 +73,7 @@ audio:not([controls]) {
 }
 ```
 
-    3. 过旧的样式属性兼容
+ 3. 过旧的样式属性兼容
 
 ```
 .unselect,i,.i,.icon {
