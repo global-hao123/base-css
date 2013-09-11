@@ -32,9 +32,9 @@ base.ie.rtl.css
 
 base.ie.ltr.css
 
-## 精简点
+## COMPACT DETAIL
 
-    1. 不常用的 form 控件 reset
+### 1. 不常用的 form 控件 reset
 
 ```
 input[type="search"] {
@@ -49,7 +49,7 @@ input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-se
 }
 ```
 
-    2. html5 标签兼容
+### 2. html5 标签兼容
 
 ```
 audio,canvas,video {
@@ -64,7 +64,7 @@ audio:not([controls]) {
 }
 ```
 
-    3. 过旧的样式属性兼容
+### 3. 过旧的样式属性兼容
 
 ```
 .unselect,i,.i,.icon {
@@ -76,7 +76,7 @@ audio:not([controls]) {
 }
 ```
 
-    4. IE Hack
+### 4. IE Hack
 
 ```
 _zoom:expression(function(el) {
@@ -84,11 +84,11 @@ _zoom:expression(function(el) {
 }(this));
 ```
 
-    5. kill jQuery-UI
+### 5. kill jQuery-UI
 
 待定, 依赖自定义网址重构
 
-    6. 不常用的工具类
+### 6. 不常用的工具类
 
 ```
 sup,.sup {
@@ -100,7 +100,7 @@ sub,.sub {
 }
 ```
 
-    7. 冗余代码
+### 7. 冗余代码
 
 ```
 @charset "utf-8";
