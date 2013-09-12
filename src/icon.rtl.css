@@ -3,20 +3,12 @@
 
 /*special status of links*/
 
-/*base*/
-.icon{
+.icon-hot, .icon-new, .icon-new_red{
     display: inline-block;
     margin-right: 3px;
     cursor: pointer;
     font-size:0;
-} 
-/*large*/
-/*.i-l{}*/
-/*media*/
-/*.i-m{} */
-/*small*/
-/*.i-s{}*/
-
+}
 .icon-hot{
     width: 30px;
     height: 11px;

@@ -3,14 +3,6 @@
 
 /*special status of links*/
 
-/*base*/
-.icon{
-	display: inline-block;
-	margin-left: 3px;
-	cursor: pointer;
-	_position: absolute;
-	font-size:0;
-} 
 /*large*/
 /*.i-l{}*/
 /*media*/
@@ -18,6 +10,13 @@
 /*small*/
 /*.i-s{}*/
 
+.icon-hot, .icon-new, .icon-new_red{
+	display: inline-block;
+	margin-left: 3px;
+	cursor: pointer;
+	_position: absolute;
+	font-size:0;
+}
 .icon-hot{
 	width: 30px;
 	height: 11px;
