@@ -142,15 +142,11 @@ sub,.sub {
 }
 ```
 
-暂定 icon 类重写为:
+调整为:
 
 ```css
-.i{} /*base*/
-.i-l{} /*large*/
-.i-m{} /*media*/
-.i-s{} /*small*/
-
-.i-new{} /*custom*/
+.icon-hot, .icon-new, .icon-new_red{
+}
 ```
 
 另外: base.css 中提供了很多常用工具类, 比如:
