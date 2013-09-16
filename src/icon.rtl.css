@@ -12,15 +12,15 @@
 .icon-hot{
     width: 30px;
     height: 11px;
-    background: url(../img/i-hot.png?m=z) no-repeat;
+    background: url(../img/i-hot.png?__sprite) no-repeat;
 }
 .icon-new{
     width: 30px;
     height: 11px;
-    background: url(../img/i-new.png?m=z) no-repeat;
+    background: url(../img/i-new.png?__sprite) no-repeat;
 }
 .icon-new_red{
     width: 25px;
     height: 15px;
-    background: url(../img/i-big-new.png?m=z) no-repeat;
+    background: url(../img/i-big-new.png?__sprite) no-repeat;
 }
