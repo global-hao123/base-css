@@ -11,3 +11,7 @@
     *overflow: visible;
     zoom: 1
 }
+.ib, .ibw .ib, s, .s, .space, .btn {
+    *display: inline;
+    zoom: 1
+}

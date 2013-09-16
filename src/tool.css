@@ -197,23 +197,20 @@ b, .b, .border {
 	float: right
 }
 
-/*.ibw, .ibw-span {
+.ibw{
 	word-spacing: -0.35em;
 	letter-spacing: -.32em
 }
 
-.ib, .ibw .ib, .ibw-span span, s, .s, .space, .btn {
-	display: -moz-inline-box;
+.ib, .ibw .ib, s, .s, .space, .btn {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1
 }
 
-.ibw .ib, .ibw-span span {
+.ibw .ib{
 	word-spacing: normal;
 	letter-spacing: normal;
 	vertical-align: top
-}*/
+}
 
 .mod {
 	overflow: hidden;
