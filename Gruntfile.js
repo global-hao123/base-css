@@ -96,7 +96,7 @@ module.exports = function(grunt) {
                         , '<%= app.src %>/tool.css'
                         , '<%= app.src %>/default.css'
                         , '<%= app.src %>/link.css'
-                        , '<%= app.src %>/icon.css'
+                        // , '<%= app.src %>/icon.css'
                     ],
                     '<%= app.dist %>/base.rtl.css': [
                         '<%= app.src %>/reset.css'
@@ -104,7 +104,7 @@ module.exports = function(grunt) {
                         , '<%= app.src %>/tool.css'
                         , '<%= app.src %>/default.css'
                         , '<%= app.src %>/link.css'
-                        , '<%= app.src %>/icon.rtl.css'
+                        // , '<%= app.src %>/icon.rtl.css'
                     ],
                     '<%= app.dist %>/base.rtl.ie.css': [
                         '<%= app.src %>/reset.css'
@@ -115,8 +115,8 @@ module.exports = function(grunt) {
                         , '<%= app.src %>/tool.ie.css'
                         , '<%= app.src %>/default.css'
                         , '<%= app.src %>/link.css'
-                        , '<%= app.src %>/icon.rtl.css'
-                        , '<%= app.src %>/icon.rtl.ie.css'
+                        // , '<%= app.src %>/icon.rtl.css'
+                        // , '<%= app.src %>/icon.rtl.ie.css'
                     ],
                     '<%= app.dist %>/base.ltr.ie.css': [
                         '<%= app.src %>/reset.css'
@@ -127,8 +127,8 @@ module.exports = function(grunt) {
                         , '<%= app.src %>/tool.ie.css'
                         , '<%= app.src %>/default.css'
                         , '<%= app.src %>/link.css'
-                        , '<%= app.src %>/icon.css'
-                        , '<%= app.src %>/icon.ie.css'
+                        // , '<%= app.src %>/icon.css'
+                        // , '<%= app.src %>/icon.ie.css'
                     ]
                 }
             }
