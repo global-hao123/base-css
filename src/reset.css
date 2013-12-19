@@ -36,9 +36,15 @@ html {
 	font-size: 100%;
 }
 
+/*
+1. Hide 3d element's backface
+*/
+
 body {
-	vertical-align: baseline;
-	background-color: transparent;
+   vertical-align: baseline;
+   background-color: transparent;
+   /* 1 */
+   -webkit-backface-visibility:hidden;
 }
 
 a:focus, a:hover, a:active, input:focus, textarea:focus {
