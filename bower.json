@@ -1,0 +1,16 @@
+{
+  "name": "base-css",
+  "version": "1.0.1",
+  "authors": [
+    "yuji <yuji@baidu.com>"
+  ],
+  "description": "jquery for vs.",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "http://gitlab.pro/common-ui/base-css",
+  "ignore": [
+    "**/*",
+    "!src/**",
+    "!dist/**"
+  ]
+}
